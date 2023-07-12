@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <TextView
+        android:id="@+id/text_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90sp"
+        android:background="#4CAF50">
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="50sp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/selector1" />
+
+        <Button
+            android:id="@+id/btn_profile"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="25sp"
+            android:background="@drawable/baseline_account_circle_24"
+            android:backgroundTint="@color/black"
+            android:onClick="pindahprofil" />
+
+
+        <ImageView
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_marginTop="25sp"
+            android:src="@drawable/cari" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/kel2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/selector2">
+
+        <ImageView
+            android:id="@+id/lokasi"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/baseline_location_on_24" />
+
+        <TextView
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tarea"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@id/lokasi"
+            android:text="AREA PENGIRIMAN"
+            android:textColor="@color/black"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tlok"
+            android:layout_toRightOf="@+id/lokasi"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="9dp"
+            android:layout_below="@+id/tarea"
+            android:text="PADANG"
+            android:textColor="#16D81E"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/kalender"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="200dp"
+            android:src="@drawable/baseline_calendar_month_24" />
+
+        <TextView
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/ttgl"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@id/kalender"
+            android:text="TANGGAL PENGRIRIMAN"
+            android:textColor="@color/black"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+
+            android:layout_toRightOf="@+id/kalender"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="9dp"
+            android:layout_below="@+id/ttgl"
+            android:text="Sabtu, 08 November..."
+            android:textColor="#10DC18"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/kel3"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/kel2"
+        android:background="@drawable/selector3">
+
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true">
+
+            <LinearLayout
+                android:id="@+id/lyuscrol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#009688"
+
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/sc1"
+                    android:layout_width="120sp"
+                    android:layout_height="85sp"
+                    android:layout_marginLeft="10sp"
+
+                    android:src="@drawable/csaay" />
+
+                <ImageView
+                    android:id="@+id/sc2"
+                    android:layout_width="120sp"
+                    android:layout_height="85sp"
+                    android:layout_marginLeft="10sp"
+
+                    android:src="@drawable/sayur" />
+
+                <ImageView
+                    android:id="@+id/sc3"
+                    android:layout_width="120sp"
+                    android:layout_height="85sp"
+                    android:layout_marginLeft="10sp"
+
+                    android:src="@drawable/sayur" />
+
+                <ImageView
+                    android:id="@+id/sc4"
+                    android:layout_width="120sp"
+                    android:layout_height="85sp"
+                    android:layout_marginLeft="10sp"
+
+                    android:src="@drawable/sayur" />
+            </LinearLayout>
+        </HorizontalScrollView>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/kel5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kel3"
+        android:background="#ffff"
+        android:layout_marginBottom="10sp"
+        >
+
+        <ImageView
+            android:id="@+id/lima"
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15sp"
+            android:src="@drawable/dua" />
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lima"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:text="sayur"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/enam"
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="15sp"
+            android:layout_toRightOf="@id/lima"
+            android:src="@drawable/empat" />
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lima"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="5dp"
+            android:text="beras"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/tujuh"
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="15sp"
+            android:layout_toRightOf="@id/enam"
+            android:src="@drawable/enam" />
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lima"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="5dp"
+            android:text="daging"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/delapan"
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:layout_below="@+id/lima"
+            android:layout_marginLeft="20dp"
+
+            android:layout_marginTop="25sp"
+            android:src="@drawable/lima" />
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lima"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="100dp"
+            android:text="terbaru"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/sembilan"
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:layout_below="@id/enam"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="25sp"
+            android:layout_toRightOf="@id/delapan"
+            android:src="@drawable/tiga" />
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lima"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="100dp"
+            android:text="promo"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/sempuluh"
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:layout_below="@id/tujuh"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="25sp"
+            android:layout_toRightOf="@id/sembilan"
+
+            android:src="@drawable/satu" />
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lima"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="100dp"
+            android:text="buah"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
